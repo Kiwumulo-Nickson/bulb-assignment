@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="root">
+<div><b>{{title}}</b></div>
+<hr>
+<ol>
+    <li v-for="Student in students">
+      {{student}}  
+    </li>
+</ol>
+<div>
+    <span>
+        Student to be added:{{studentToBeAdded}}
+    </span>
+</div>
+<div>
+    <input v-model="studentToBeAdded"  type="text">
+    <button v-on:click="addStudent">Add student</button>
+</div>
+</div>
+</body>
+<script src="./js/vue.js"></script>
+<script  src="./js/custom.js"></script>
+</html>
